@@ -1,5 +1,3 @@
-#define BOOST_ALL_NO_LIB
-
 #include <iostream>
 #include <ranges>
 #include <stdexcept>
