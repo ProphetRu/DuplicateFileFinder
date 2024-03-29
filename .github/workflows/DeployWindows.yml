@@ -17,7 +17,7 @@ jobs:
       - name: Install vcpkg
         run: '.\vcpkg\bootstrap-vcpkg.bat -disableMetrics'
       - name: Install gtest
-        run: '.\vcpkg install gtest boost-program-options boost-filesystem boost-uuid'
+        run: '.\vcpkg install gtest boost-program-options boost-filesystem boost-uuid boost-crc boost-regex'
       - name: Integrate vcpkg
         run: '.\vcpkg\vcpkg integrate install'
       - name: Build project

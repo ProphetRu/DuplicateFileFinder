@@ -3,7 +3,7 @@ Educational project with [googletest](https://github.com/google/googletest), [do
 
 ## Build local Linux
 ```shell
-sudo apt-get update && sudo apt-get install cmake libgtest-dev libboost-all-dev -y
+sudo apt-get update && sudo apt-get install cmake libgtest-dev libboost-all-dev libboost-regex-dev -y
 
 cd DuplicateFileFinder
 mkdir build && cd build
@@ -19,7 +19,7 @@ cmake --build . --target package
 
 ## Build local Windows
 ```shell
-vcpkg install gtest boost-program-options boost-filesystem boost-uuid boost-crc
+vcpkg install gtest boost-program-options boost-filesystem boost-uuid boost-crc boost-regex
 vcpkg integrate install
 
 cd DuplicateFileFinder
