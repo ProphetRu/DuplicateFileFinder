@@ -91,7 +91,7 @@ if (MSVC)
 	)
 else ()
 	target_compile_options(${PROJECT_NAME} PRIVATE
-		-std=c++23 -Wall -Wextra -pedantic -Werror
+		-std=c++23 -Wall -Wextra -pedantic -Werror -lboost_regex
 	)
 	target_compile_options(${TEST_NAME} PRIVATE
 		-std=c++23 -Wall -Wextra -pedantic -Werror
