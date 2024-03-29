@@ -16,8 +16,8 @@ jobs:
         run: 'git clone https://github.com/Microsoft/vcpkg.git'
       - name: Install vcpkg
         run: '.\vcpkg\bootstrap-vcpkg.bat -disableMetrics'
-      - name: Install gtest
-        run: '.\vcpkg install gtest boost-program-options boost-filesystem boost-uuid boost-crc boost-regex'
+      - name: Install libs
+        run: '.\vcpkg\vcpkg install gtest boost-program-options boost-filesystem boost-uuid boost-crc boost-regex'
       - name: Integrate vcpkg
         run: '.\vcpkg\vcpkg integrate install'
       - name: Build project
