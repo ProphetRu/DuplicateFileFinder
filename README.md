@@ -35,13 +35,13 @@ cmake --build . --config Release
 The program searches for duplicate files in specified directories.
 The program takes the following arguments:
 * `--help` - Produce help message.
-* `--directories or -D` - Directories to scan.
-* `--exclude or -E` - Directories to exclude from finding.
+* `--directories` or `-D` - Directories to scan.
+* `--exclude` or `-E` - Directories to exclude from finding.
 * `--deep-scan` - `1` to including subdirectories, `0` to search only in the specified directory.
-* `--min-file-size or -F` - Minimum file size in bytes that will included when searching.
-* `--file-mask or -M` - File search mask, supports regular expressions.
-* `--block-size or -S` - Block size for reading files.
-* `--hashing-type or -H` - Hashing type `1` to md5, `0` to crc32.
+* `--min-file-size` or `-F` - Minimum file size in bytes that will included when searching.
+* `--file-mask` or `-M` - File search mask, supports regular expressions.
+* `--block-size` or `-S` - Block size for reading files.
+* `--hashing-type` or `-H` - Hashing type `1` to md5, `0` to crc32.
 
 Example:
 ```shell
